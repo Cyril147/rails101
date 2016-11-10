@@ -6,6 +6,9 @@ Rails.application.routes.draw do
       post :quit
     end
     resources :posts
+    collection do
+      get :hot
+    end
   end
   root 'groups#index'
 end
